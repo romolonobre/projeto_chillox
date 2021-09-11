@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/constants/const.dart';
 
-class CustumBottomNavigatorBar extends StatefulWidget {
+class CustomBottomNavigatorBar extends StatefulWidget {
   @override
-  State<CustumBottomNavigatorBar> createState() =>
-      _CustumBottomNavigatorBarState();
+  State<CustomBottomNavigatorBar> createState() =>
+      _CustomBottomNavigatorBarState();
 }
 
-class _CustumBottomNavigatorBarState extends State<CustumBottomNavigatorBar> {
+class _CustomBottomNavigatorBarState extends State<CustomBottomNavigatorBar> {
   int currentIndex = 0;
   bool isSelected = true;
 

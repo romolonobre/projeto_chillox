@@ -6,8 +6,8 @@ import 'package:projeto_chillox/constants/const.dart';
 ///  to drawn a text with diffent colors
 ///
 
-class CustumRichText extends StatelessWidget {
-  const CustumRichText({Key? key}) : super(key: key);
+class CustomRichText extends StatelessWidget {
+  const CustomRichText({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
