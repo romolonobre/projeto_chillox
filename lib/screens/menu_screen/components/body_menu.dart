@@ -39,20 +39,7 @@ class BodyMenu extends StatelessWidget {
             ],
           ),
         ),
-        Expanded(
-          child: GridView.builder(
-            itemCount: popularfoodList.length,
-            gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 200,
-                mainAxisSpacing: 10,
-                childAspectRatio: 0.8),
-            itemBuilder: (context, index) {
-              return GridViewPopularFood(
-                popularfoodList[index],
-              );
-            },
-          ),
-        )
+        GridViewPopularFood()
       ],
     );
   }

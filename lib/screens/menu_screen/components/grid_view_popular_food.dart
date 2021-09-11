@@ -7,8 +7,28 @@ import 'package:projeto_chillox/screens/product_info_screen/product_info_screen.
 ///
 
 class GridViewPopularFood extends StatelessWidget {
+  const GridViewPopularFood({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: GridView.builder(
+        itemCount: popularfoodList.length,
+        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: 200,
+            mainAxisSpacing: 10,
+            childAspectRatio: 0.8),
+        itemBuilder: (context, index) {
+          return _PopularFoodCard(popularfoodList[index]);
+        },
+      ),
+    );
+  }
+}
+
+class _PopularFoodCard extends StatelessWidget {
   PopularFood popularFood;
-  GridViewPopularFood(this.popularFood);
+  _PopularFoodCard(this.popularFood);
 
   @override
   Widget build(BuildContext context) {
