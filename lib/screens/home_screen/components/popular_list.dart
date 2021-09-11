@@ -5,7 +5,9 @@ import 'package:projeto_chillox/models/burger.dart';
 import 'package:projeto_chillox/screens/menu_screen/menu_screen.dart';
 
 ///
-/// This Widget draws a list of our popular food
+/// This Widget draws a list of our popular food.
+/// on the bottom of this page code we can find a private
+/// widget with his own descripiton
 ///
 
 class PopularList extends StatelessWidget {
@@ -62,6 +64,11 @@ class _PopularFoodCard extends StatelessWidget {
                 //  Navigator.of(context)
                 //      .pushNamed('MenuScreen', arguments: populafood);
               },
+
+              ///
+              /// Image value
+              ///
+
               child: Image.network(
                 burger.imageUrl,
                 fit: BoxFit.cover,
@@ -69,6 +76,13 @@ class _PopularFoodCard extends StatelessWidget {
               ),
             ),
           ),
+
+          ///
+          /// We have created this Conatiner to place our
+          /// food infomation "burger name", "burger category"
+          /// "burger review icon" "burger delivery duration"
+          ///
+
           Container(
             margin: EdgeInsets.only(bottom: 20),
             decoration: BoxDecoration(
@@ -92,6 +106,9 @@ class _PopularFoodCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // Burger name
+                    //
+
                     Text(
                       burger.name,
                       style: TextStyle(
@@ -100,6 +117,10 @@ class _PopularFoodCard extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 5),
+
+                    // Burger category
+                    //
+
                     Text(
                       burger.category,
                       style: TextStyle(
@@ -113,6 +134,9 @@ class _PopularFoodCard extends StatelessWidget {
                   children: [
                     Row(
                       children: [
+                        // Burger review icon
+                        //
+
                         const Icon(
                           Icons.star_outlined,
                           size: 15,
@@ -126,6 +150,10 @@ class _PopularFoodCard extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 5),
+
+                    // Burger deliver duration
+                    //
+
                     Text(
                       burger.duration,
                       style: TextStyle(
