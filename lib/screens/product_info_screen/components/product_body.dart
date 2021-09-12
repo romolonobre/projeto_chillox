@@ -3,8 +3,10 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'package:projeto_chillox/components/buttom.dart';
 import 'package:projeto_chillox/components/delivery_info.dart';
+import 'package:projeto_chillox/components/image_header.dart';
 
 import 'package:projeto_chillox/models/popular_food.dart';
+import 'package:projeto_chillox/screens/product_info_screen/components/image_header.dart';
 import 'package:projeto_chillox/tipography/heading.dart';
 
 class ProductBody extends StatelessWidget {
@@ -33,26 +35,7 @@ class ProductBody extends StatelessWidget {
                     ///
                     ///image header
                     ///
-                    Align(
-                      alignment: Alignment.center,
-                      child: DecoratedBox(
-                        decoration: const BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.orange,
-                                blurRadius: 200,
-                                spreadRadius: -80,
-                                offset: Offset(0, 1)),
-                          ],
-                        ),
-                        child: Image.asset(
-                          popularFood.imageUrl,
-                          height: 300,
-                          width: 250,
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                    ),
+                    ImageHeaderPopularFood(popularFood: popularFood),
 
                     ///
                     ///appbar buttons
