@@ -3,7 +3,6 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 import 'package:projeto_chillox/components/buttom.dart';
 import 'package:projeto_chillox/components/delivery_info.dart';
-import 'package:projeto_chillox/components/image_header.dart';
 
 import 'package:projeto_chillox/models/popular_food.dart';
 import 'package:projeto_chillox/screens/product_info_screen/components/image_header.dart';

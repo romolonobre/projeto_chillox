@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/components/chillex_logo.dart';
-import 'package:projeto_chillox/components/image_header.dart';
+import 'package:projeto_chillox/screens/menu_screen/components/image_header.dart';
 import 'package:projeto_chillox/models/burger.dart';
 import 'package:projeto_chillox/models/popular_food.dart';
 
