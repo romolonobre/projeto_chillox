@@ -5,7 +5,8 @@ import 'package:projeto_chillox/components/buttom.dart';
 import 'package:projeto_chillox/components/delivery_info.dart';
 
 import 'package:projeto_chillox/models/popular_food.dart';
-import 'package:projeto_chillox/tipography/heading.dart';
+
+import 'package:projeto_chillox/typography/heading.dart';
 
 class ProductBody extends StatelessWidget {
   PopularFood popularFood;
