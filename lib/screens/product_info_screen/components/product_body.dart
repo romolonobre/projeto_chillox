@@ -5,6 +5,7 @@ import 'package:projeto_chillox/components/buttom.dart';
 import 'package:projeto_chillox/components/delivery_info.dart';
 
 import 'package:projeto_chillox/models/popular_food.dart';
+import 'package:projeto_chillox/screens/product_info_screen/components/food_description.dart';
 import 'package:projeto_chillox/screens/product_info_screen/components/image_header.dart';
 import 'package:projeto_chillox/tipography/heading.dart';
 
@@ -81,17 +82,11 @@ class ProductBody extends StatelessWidget {
                       fallbackHeight: 100,
                     ),
                     const SizedBox(height: 15),
-                    Heading(
-                      'About',
-                      heading: Headings.h4,
-                      fontWeight: FontWeight.w800,
+                    DescriptionFood(
+                      popularFood: popularFood,
                     ),
                     const SizedBox(height: 10),
-                    Heading(
-                      popularFood.fullDescription,
-                      heading: Headings.h5,
-                      color: Colors.grey,
-                    ),
+
                     const SizedBox(height: 10),
                     Container(
                       height: 80,
