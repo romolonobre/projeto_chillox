@@ -8,6 +8,7 @@ import 'package:projeto_chillox/models/popular_food.dart';
 import 'package:projeto_chillox/screens/product_info_screen/components/image_header.dart';
 import 'package:projeto_chillox/tipography/heading.dart';
 
+import 'app_bar_buttons.dart';
 import 'food_quantity_counter.dart';
 
 class ProductBody extends StatelessWidget {
@@ -154,38 +155,6 @@ class ProductBody extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class AppBarButtons extends StatelessWidget {
-  const AppBarButtons({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Buttom(
-            icon: const Icon(
-              Icons.arrow_back,
-            ),
-            onTap: () {},
-            backgroundColor: Colors.white,
-          ),
-          Buttom(
-            icon: const Icon(
-              Icons.favorite_border_outlined,
-            ),
-            onTap: () {},
-            backgroundColor: Colors.white,
-          ),
-        ],
-      ),
     );
   }
 }
