@@ -60,12 +60,7 @@ class ProductBody extends StatelessWidget {
                     /// NAME - PRICE - SHORT DESCRIPTION
                     ///
                     FoodDetails(popularFood: popularFood),
-                    const SizedBox(height: 5),
-                    Heading(
-                      popularFood.subdescription,
-                      heading: Headings.h5,
-                      color: Colors.grey,
-                    ),
+
                     const SizedBox(height: 15),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,

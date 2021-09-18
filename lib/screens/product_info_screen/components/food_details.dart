@@ -16,19 +16,30 @@ class FoodDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Heading(
-          popularFood.name,
-          fontWeight: FontWeight.w800,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Heading(
+              popularFood.name,
+              fontWeight: FontWeight.w800,
+            ),
+            Text(
+              popularFood.price,
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
         ),
-        Text(
-          popularFood.price,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
+        const SizedBox(height: 5),
+        Heading(
+          popularFood.subdescription,
+          heading: Headings.h5,
+          color: Colors.grey,
         ),
       ],
     );
