@@ -9,6 +9,7 @@ import 'package:projeto_chillox/screens/product_info_screen/components/image_hea
 import 'package:projeto_chillox/tipography/heading.dart';
 
 import 'app_bar_buttons.dart';
+import 'delivery_info_content.dart';
 import 'food_details.dart';
 import 'food_quantity_counter.dart';
 
@@ -62,35 +63,13 @@ class ProductBody extends StatelessWidget {
                     FoodDetails(popularFood: popularFood),
 
                     const SizedBox(height: 15),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        DeliveryInfo(
-                            IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.moped_rounded,
-                                )),
-                            popularFood.delivery),
-                        DeliveryInfo(
-                            IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.moped_rounded,
-                                )),
-                            popularFood.deliverytime),
-                        DeliveryInfo(
-                          IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.star_rate_rounded,
-                              color: Colors.yellow.shade800,
-                            ),
-                          ),
-                          popularFood.review,
-                        )
-                      ],
-                    ),
+
+                    ///
+                    /// This Row Widget draws our 3 DeliveryInfo inside
+                    /// a container. inside the container we used an $IconButtom
+                    ///  with an icon, annonimous function and a text
+
+                    DeliveryInfoContent(popularFood: popularFood),
                     const SizedBox(height: 15),
                     Heading(
                       'Ingredients',

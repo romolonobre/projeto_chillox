@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:projeto_chillox/components/delivery_info.dart';
 import 'package:projeto_chillox/models/popular_food.dart';
 
+///
+/// This Row Widget draws our 3 DeliveryInfo inside
+/// a container. inside the container we used an $IconButtom
+///  with an icon, annonimous function and a text
+///
+
 class DeliveryInfoContent extends StatelessWidget {
   const DeliveryInfoContent({
     Key? key,
