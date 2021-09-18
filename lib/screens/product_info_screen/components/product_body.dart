@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
-import 'package:projeto_chillox/components/buttom.dart';
-import 'package:projeto_chillox/components/delivery_info.dart';
 
 import 'package:projeto_chillox/models/popular_food.dart';
 import 'package:projeto_chillox/screens/product_info_screen/components/food_description.dart';
 import 'package:projeto_chillox/screens/product_info_screen/components/image_header.dart';
 import 'package:projeto_chillox/tipography/heading.dart';
 
+import '../add_to_cart_button.dart';
 import 'app_bar_buttons.dart';
 import 'delivery_info_content.dart';
 import 'food_details.dart';
@@ -82,31 +81,19 @@ class ProductBody extends StatelessWidget {
                       fallbackHeight: 100,
                     ),
                     const SizedBox(height: 15),
-                    DescriptionFood(
-                      popularFood: popularFood,
-                    ),
+
+                    ///
+                    /// This widget draws de desciption
+                    /// abount the current food
+                    ///
+
+                    DescriptionFood(popularFood: popularFood),
                     const SizedBox(height: 10),
 
-                    const SizedBox(height: 10),
-                    Container(
-                      height: 80,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: Color(0xffff663a),
-                        borderRadius: BorderRadius.circular(
-                          20,
-                        ),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Add to cart ${popularFood.price}',
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    )
+                    ///
+                    /// Add To Cart Button
+                    ///
+                    AddToCartButton(popularFood: popularFood)
                   ],
                 ),
               ),
