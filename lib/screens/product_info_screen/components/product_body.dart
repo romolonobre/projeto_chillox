@@ -21,12 +21,15 @@ class ProductBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: [
+        ///
+        /// We wraped ou column with  SliverToBoxAdapter widget
+        /// because all widgets inside a CustomScrollView must to be a
+        /// sliver so SliverToBoxAdapter is perfect to use in this situation
+        ///
+
         SliverToBoxAdapter(
           child: Column(
             children: [
-              ///
-              /// imager header
-              ///
               Container(
                 height: 350,
                 width: double.infinity,
@@ -42,10 +45,16 @@ class ProductBody extends StatelessWidget {
                     ImageHeaderPopularFood(popularFood: popularFood),
 
                     ///
-                    ///appbar buttons
+                    /// App Bar Buttons
                     ///
 
                     AppBarButtons(),
+
+                    ///
+                    /// This Widget draws a food counter that when you
+                    /// press it could  incrise or descise
+                    ///
+
                     FoodQuantityCounter()
                   ],
                 ),

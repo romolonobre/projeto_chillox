@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+/// This Widget draws a food counter that when you
+/// press it could  incrise or descise.
+/// We have to buttons - and +
+///
+
 class FoodQuantityCounter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
