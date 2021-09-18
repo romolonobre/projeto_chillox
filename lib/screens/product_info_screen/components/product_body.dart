@@ -63,7 +63,7 @@ class ProductBody extends StatelessWidget {
                         ],
                       ),
                     ),
-                    FoodQuantityButtons()
+                    FoodQuantityCounter()
                   ],
                 ),
               ),
@@ -178,7 +178,7 @@ class ProductBody extends StatelessWidget {
   }
 }
 
-class FoodQuantityButtons extends StatelessWidget {
+class FoodQuantityCounter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
