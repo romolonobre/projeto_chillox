@@ -8,6 +8,8 @@ import 'package:projeto_chillox/models/popular_food.dart';
 import 'package:projeto_chillox/screens/product_info_screen/components/image_header.dart';
 import 'package:projeto_chillox/tipography/heading.dart';
 
+import 'food_quantity_counter.dart';
+
 class ProductBody extends StatelessWidget {
   PopularFood popularFood;
   ProductBody(this.popularFood);
@@ -40,29 +42,7 @@ class ProductBody extends StatelessWidget {
                     ///appbar buttons
                     ///
 
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 35),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Buttom(
-                            icon: const Icon(
-                              Icons.arrow_back,
-                            ),
-                            onTap: () {},
-                            backgroundColor: Colors.white,
-                          ),
-                          Buttom(
-                            icon: const Icon(
-                              Icons.favorite_border_outlined,
-                            ),
-                            onTap: () {},
-                            backgroundColor: Colors.white,
-                          ),
-                        ],
-                      ),
-                    ),
+                    AppBarButtons(),
                     FoodQuantityCounter()
                   ],
                 ),
@@ -178,46 +158,34 @@ class ProductBody extends StatelessWidget {
   }
 }
 
-class FoodQuantityCounter extends StatelessWidget {
+class AppBarButtons extends StatelessWidget {
+  const AppBarButtons({
+    Key? key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-        bottom: -30,
-        left: 110,
-        child: Container(
-            height: 70,
-            width: 160,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(15),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.deepOrange.withOpacity(
-                    0.2,
-                  ),
-                  spreadRadius: 0,
-                  blurRadius: 18,
-                  offset: Offset(0, 10),
-                )
-              ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Buttom(
+            icon: const Icon(
+              Icons.arrow_back,
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
-                Icon(
-                  Icons.remove,
-                  size: 30,
-                ),
-                Text(
-                  '2',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-                Icon(
-                  Icons.add,
-                  size: 30,
-                  color: Colors.orange,
-                ),
-              ],
-            )));
+            onTap: () {},
+            backgroundColor: Colors.white,
+          ),
+          Buttom(
+            icon: const Icon(
+              Icons.favorite_border_outlined,
+            ),
+            onTap: () {},
+            backgroundColor: Colors.white,
+          ),
+        ],
+      ),
+    );
   }
 }
