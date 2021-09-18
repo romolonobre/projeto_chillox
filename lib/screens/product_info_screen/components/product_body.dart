@@ -9,6 +9,7 @@ import 'package:projeto_chillox/screens/product_info_screen/components/image_hea
 import 'package:projeto_chillox/tipography/heading.dart';
 
 import 'app_bar_buttons.dart';
+import 'food_details.dart';
 import 'food_quantity_counter.dart';
 
 class ProductBody extends StatelessWidget {
@@ -54,22 +55,11 @@ class ProductBody extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Heading(
-                          popularFood.name,
-                          fontWeight: FontWeight.w800,
-                        ),
-                        Text(
-                          popularFood.price,
-                          style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
+                    ///
+                    /// This widget Draws the details about the food such as
+                    /// NAME - PRICE - SHORT DESCRIPTION
+                    ///
+                    FoodDetails(popularFood: popularFood),
                     const SizedBox(height: 5),
                     Heading(
                       popularFood.subdescription,
