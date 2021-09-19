@@ -3,7 +3,7 @@ import 'package:projeto_chillox/constants/const.dart';
 
 ///
 /// This Widget is a $RichText that allows
-///  to drawn a text with diffent colors
+///  to draw a text with diffent colors
 ///
 
 class CustomRichText extends StatelessWidget {

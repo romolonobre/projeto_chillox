@@ -3,7 +3,7 @@ import 'package:projeto_chillox/components/delivery_info.dart';
 import 'package:projeto_chillox/models/burger.dart';
 
 ///
-/// This widget draws all the details of teh selected burger from HomeScreen
+/// This widget draws all selected burger information from HomeScreen
 ///
 
 class ConatinerContent extends StatelessWidget {
@@ -31,7 +31,7 @@ class ConatinerContent extends StatelessWidget {
         const SizedBox(height: 15),
 
         ///
-        /// This Row Widget draws our 3 DeliveryInfo inside
+        /// This Row draws our 3 DeliveryInfo widget inside
         /// a container. inside the container we used an $IconButtom
         ///  with an icon, annonimous function and a text
         ///

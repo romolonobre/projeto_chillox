@@ -9,7 +9,7 @@ import 'buttom_cart.dart';
 import 'container_content.dart';
 
 ///
-/// This widget containe the Stack and all the widgets positioned on it
+/// This widget contains the Stack and all the widgets positioned on it
 ///
 
 class StackBurgerDetails extends StatelessWidget {
@@ -26,7 +26,7 @@ class StackBurgerDetails extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         ///
-        /// Imagehearder drwans the Stack backgroundImage
+        /// The Widget $Imagehearder drwans the backgroundImage
         ///
 
         ImageHeader(burger),

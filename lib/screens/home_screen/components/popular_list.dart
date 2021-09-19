@@ -6,8 +6,8 @@ import 'package:projeto_chillox/screens/menu_screen/menu_screen.dart';
 
 ///
 /// This Widget draws a list of our popular food.
-/// on the bottom of this page code we can find a private
-/// widget with his own descripiton
+/// At the bottom of this page code we can find a private
+/// widget with his own comments
 ///
 
 class PopularList extends StatelessWidget {
@@ -50,7 +50,7 @@ class _PopularFoodCard extends StatelessWidget {
             ),
 
             ///
-            /// We used $InkeWell to allow was to click and navigate to the next page
+            /// We used $InkeWell to allow us to click and navigate to the next page
             /// with $navigator.of(context).push
             ///
             child: InkWell(
@@ -79,7 +79,7 @@ class _PopularFoodCard extends StatelessWidget {
 
           ///
           /// We have created this Conatiner to place our
-          /// food infomation "burger name", "burger category"
+          /// food infomation : "burger name", "burger category"
           /// "burger review icon" "burger delivery duration"
           ///
 
@@ -134,6 +134,7 @@ class _PopularFoodCard extends StatelessWidget {
                   children: [
                     Row(
                       children: [
+                        //
                         // Burger review icon
                         //
 
