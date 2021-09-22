@@ -58,6 +58,7 @@ class ConatinerContent extends StatelessWidget {
                   onPressed: () {},
                   icon: const Icon(
                     Icons.star_rate_rounded,
+                    color: Colors.amber,
                   ),
                 ),
                 burger.review)
