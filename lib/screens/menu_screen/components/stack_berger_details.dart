@@ -31,7 +31,10 @@ class StackBurgerDetails extends StatelessWidget {
 
         ImageHeader(burger),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+          padding: const EdgeInsets.symmetric(
+            vertical: 40,
+            horizontal: 20,
+          ),
 
           ///
           /// We use this ROW widget to align our buttons
