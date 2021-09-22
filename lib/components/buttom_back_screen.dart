@@ -3,10 +3,10 @@ import 'package:projeto_chillox/components/buttom.dart';
 
 ///
 /// This Widget draws our customized button and
-/// the navigator pop from MenuScreen to HomeScreen
+/// use $navigator pop to go to the preview screen
 ///
 
-class ButtomBackPage extends StatelessWidget {
+class ButtomBackScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Buttom(

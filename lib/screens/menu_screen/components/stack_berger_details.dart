@@ -4,7 +4,7 @@ import 'package:projeto_chillox/screens/menu_screen/components/image_header.dart
 import 'package:projeto_chillox/models/burger.dart';
 import 'package:projeto_chillox/models/popular_food.dart';
 
-import 'buttom_back_page.dart';
+import '../../../components/buttom_back_screen.dart';
 import 'buttom_cart.dart';
 import 'container_content.dart';
 
@@ -31,7 +31,10 @@ class StackBurgerDetails extends StatelessWidget {
 
         ImageHeader(burger),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+          padding: const EdgeInsets.symmetric(
+            vertical: 40,
+            horizontal: 20,
+          ),
 
           ///
           /// We use this ROW widget to align our buttons
@@ -39,7 +42,7 @@ class StackBurgerDetails extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              ButtomBackPage(),
+              ButtomBackScreen(),
               ButtomCart(),
             ],
           ),
