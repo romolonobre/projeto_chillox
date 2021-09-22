@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 ///
 /// This widget draws the name of all categories on the menu
-/// such a 'Burgers' ,'French Fries' ,'Chicken', 'popular'
+/// such a 'Burgers' ,'French Fries' ,'Chicken', 'popular'.
+/// and we place it in the BodyMenu widget
 ///
 
 class MenuCategory extends StatelessWidget {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projeto_chillox/components/buttom.dart';
 
 ///
-/// This Widget draws our custumized button and
+/// This Widget draws our customized button and
 /// the navigator pop from MenuScreen to HomeScreen
 ///
 

@@ -11,8 +11,8 @@ import 'center_content_app_bar.dart';
 /// with this combination we have our custumized appbar
 ///
 
-class CustumAppBar extends StatelessWidget {
-  const CustumAppBar({Key? key}) : super(key: key);
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

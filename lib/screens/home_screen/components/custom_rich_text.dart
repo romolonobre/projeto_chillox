@@ -3,11 +3,11 @@ import 'package:projeto_chillox/constants/const.dart';
 
 ///
 /// This Widget is a $RichText that allows
-///  to drawn a text with diffent colors
+///  to draw a text with diffent colors
 ///
 
-class CustumRichText extends StatelessWidget {
-  const CustumRichText({Key? key}) : super(key: key);
+class CustomRichText extends StatelessWidget {
+  const CustomRichText({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

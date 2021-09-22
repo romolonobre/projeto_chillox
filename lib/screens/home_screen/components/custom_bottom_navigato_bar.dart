@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/constants/const.dart';
 
-class CustumBottomNavigatorBar extends StatefulWidget {
+/* This Widget draws our bottom bar, we have used
+   statefulwidget as the icon Widget changes color when is 
+   selected. We used $sizedbox.shrink on the title as
+   we dont want to have any TitleElemen
+ */
+
+class CustomBottomNavigatorBar extends StatefulWidget {
   @override
-  State<CustumBottomNavigatorBar> createState() =>
-      _CustumBottomNavigatorBarState();
+  State<CustomBottomNavigatorBar> createState() =>
+      _CustomBottomNavigatorBarState();
 }
 
-class _CustumBottomNavigatorBarState extends State<CustumBottomNavigatorBar> {
+class _CustomBottomNavigatorBarState extends State<CustomBottomNavigatorBar> {
   int currentIndex = 0;
   bool isSelected = true;
 
@@ -15,6 +21,9 @@ class _CustumBottomNavigatorBarState extends State<CustumBottomNavigatorBar> {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       items: const [
+        // Icon Value
+        //
+
         BottomNavigationBarItem(
           icon: Icon(
             Icons.album_outlined,
@@ -22,6 +31,9 @@ class _CustumBottomNavigatorBarState extends State<CustumBottomNavigatorBar> {
           ),
           title: SizedBox.shrink(),
         ),
+
+        // Icon Value
+        //
         BottomNavigationBarItem(
           icon: Icon(
             Icons.star_outline_outlined,
@@ -29,6 +41,10 @@ class _CustumBottomNavigatorBarState extends State<CustumBottomNavigatorBar> {
           ),
           title: SizedBox.shrink(),
         ),
+
+        // Icon Value
+        //
+
         BottomNavigationBarItem(
           icon: Icon(
             Icons.shopping_bag_outlined,
@@ -36,6 +52,10 @@ class _CustumBottomNavigatorBarState extends State<CustumBottomNavigatorBar> {
           ),
           title: SizedBox.shrink(),
         ),
+
+        // Icon Value
+        //
+
         BottomNavigationBarItem(
           icon: Icon(
             Icons.person_outline_outlined,

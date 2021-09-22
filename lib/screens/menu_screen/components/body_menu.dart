@@ -8,6 +8,12 @@ import 'grid_view_popular_food.dart';
 import 'menu_category.dart';
 import 'menu_search_heading.dart';
 
+/* 
+  This widget is the body of our screen, we use it to
+  place our customed widgets to make it nice and fit 
+  on the screen
+*/
+
 class BodyMenu extends StatelessWidget {
   Burger burger;
   BodyMenu(this.burger);
@@ -33,20 +39,7 @@ class BodyMenu extends StatelessWidget {
             ],
           ),
         ),
-        Expanded(
-          child: GridView.builder(
-            itemCount: popularfoodList.length,
-            gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 200,
-                mainAxisSpacing: 10,
-                childAspectRatio: 0.8),
-            itemBuilder: (context, index) {
-              return GridViewPopularFood(
-                popularfoodList[index],
-              );
-            },
-          ),
-        )
+        GridViewPopularFood()
       ],
     );
   }

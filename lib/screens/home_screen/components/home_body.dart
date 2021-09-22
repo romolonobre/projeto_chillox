@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:projeto_chillox/screens/home_screen/components/popular_list.dart';
 
 import 'categories_food_list.dart';
-import 'custum_app_bar.dart';
-import 'custum_rich_text.dart';
+import 'custom_app_bar.dart';
+import 'custom_rich_text.dart';
 import 'search_bar_custmed.dart';
 
 ///
@@ -20,9 +20,9 @@ class HomeBody extends StatelessWidget {
     return Column(
       children: [
         const SizedBox(height: 50),
-        const CustumAppBar(),
+        const CustomAppBar(),
         const SizedBox(height: 20),
-        const CustumRichText(),
+        const CustomRichText(),
         const SizedBox(height: 20),
         const SearchBarCustumed(),
         const SizedBox(height: 24),

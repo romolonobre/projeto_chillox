@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/components/buttom.dart';
 
-import 'package:projeto_chillox/models/popular_food.dart';
-import 'package:projeto_chillox/screens/product_info_screen/product_info_screen.dart';
+///
+/// This widget draws our buttom cart
+///
 
 class ButtomCart extends StatelessWidget {
   @override
