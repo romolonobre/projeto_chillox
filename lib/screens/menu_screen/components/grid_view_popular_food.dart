@@ -127,7 +127,7 @@ class _PopularFoodCard extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
-                  const SizedBox(width: 25),
+                  const SizedBox(width: 20),
 
                   ///
                   /// Icon value
