@@ -100,7 +100,7 @@ class _PopularFoodCard extends StatelessWidget {
 
             ///
             /// This Widget draws a white container with the
-            /// burger price and the $add Icon
+            /// burger price and the add Icon
 
             Container(
               padding: const EdgeInsets.all(5),

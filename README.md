@@ -1,16 +1,13 @@
-# projeto_chillox
+CHILLOX BURGERIA APP  
 
-A new Flutter project.
+-- APP STILL IN PROGRESS --
 
-## Getting Started
+This is a flutter app experiment.
 
-This project is a starting point for a Flutter application.
+I've developted it to have the opportunity to learn more about flutter.
 
-A few resources to get you started if this is your first Flutter project:
+This is a Burgers shop app with four screens at the moment.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="752" alt="Screen Shot 2021-09-11 at 10 30 20 pm" src="https://user-images.githubusercontent.com/85221055/132947943-478891b0-5b7a-439d-bfd3-cfab604e8299.png">
+
