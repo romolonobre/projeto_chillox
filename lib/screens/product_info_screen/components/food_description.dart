@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/models/popular_food.dart';
-import 'package:projeto_chillox/tipography/heading.dart';
+
+import 'package:projeto_chillox/typography/heading.dart';
 
 class DescriptionFood extends StatelessWidget {
   PopularFood popularFood;
