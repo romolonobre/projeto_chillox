@@ -9,5 +9,4 @@ I've developted it to have the opportunity to learn more about flutter.
 This is a Burgers shop app with four screens at the moment.
 
 
-<img width="752" alt="Screen Shot 2021-09-11 at 10 30 20 pm" src="https://user-images.githubusercontent.com/85221055/132947943-478891b0-5b7a-439d-bfd3-cfab604e8299.png">
-
+<img width="848" alt="Screen Shot 2021-09-27 at 11 55 35 am" src="https://user-images.githubusercontent.com/85221055/134895638-ee166238-9ba0-4688-8f50-fc9dab2e5359.png">
