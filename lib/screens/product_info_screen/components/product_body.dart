@@ -9,8 +9,10 @@ import 'package:projeto_chillox/typography/heading.dart';
 import '../add_to_cart_button.dart';
 import 'app_bar_buttons.dart';
 import 'delivery_info_content.dart';
+import 'food_description.dart';
 import 'food_details.dart';
 import 'food_quantity_counter.dart';
+import 'image_header.dart';
 
 class ProductBody extends StatelessWidget {
   PopularFood popularFood;
