@@ -4,5 +4,7 @@ import 'package:projeto_chillox/modules/home_screen/home_screen.dart';
 
 class HomeModule implements Module {
   @override
-  List<GetPage> routers = [GetPage(name: '/', page: () => const HomeScreen())];
+  List<GetPage> routers = [
+    GetPage(name: '/', page: () => const HomeScreen()),
+  ];
 }
