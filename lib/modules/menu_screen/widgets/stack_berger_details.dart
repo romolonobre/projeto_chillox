@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/application/components/buttom_back_screen.dart';
 import 'package:projeto_chillox/application/components/chillex_logo.dart';
-import 'package:projeto_chillox/application/models/burger.dart';
 
 import 'buttom_cart.dart';
 import 'container_content.dart';
@@ -12,13 +11,6 @@ import 'image_header.dart';
 ///
 
 class StackBurgerDetails extends StatelessWidget {
-  StackBurgerDetails({
-    Key? key,
-    required this.burger,
-  }) : super(key: key);
-
-  Burger burger;
-
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -28,7 +20,7 @@ class StackBurgerDetails extends StatelessWidget {
         /// The Widget $Imagehearder drwans the backgroundImage
         ///
 
-        ImageHeader(burger),
+        ImageHeader(),
         Padding(
           padding: const EdgeInsets.symmetric(
             vertical: 40,
@@ -74,7 +66,7 @@ class StackBurgerDetails extends StatelessWidget {
                         spreadRadius: 3,
                         offset: Offset(0, 7))
                   ]),
-              child: ConatinerContent(burger)),
+              child: ConatinerContent()),
         ),
 
         ///

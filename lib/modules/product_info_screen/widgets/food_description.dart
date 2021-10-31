@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_chillox/application/models/popular_food.dart';
 
 import 'package:projeto_chillox/typography/heading.dart';
 
 class DescriptionFood extends StatelessWidget {
-  PopularFood popularFood;
-  DescriptionFood({required this.popularFood});
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,7 +15,7 @@ class DescriptionFood extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Heading(
-          popularFood.fullDescription,
+          'popularFood.fullDescription',
           heading: Headings.h5,
           color: Colors.grey,
         ),

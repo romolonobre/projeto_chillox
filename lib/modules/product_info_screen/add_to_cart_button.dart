@@ -1,18 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_chillox/application/models/popular_food.dart';
 
 ///
 /// Add To Cart Butom
 ///
 
 class AddToCartButton extends StatelessWidget {
-  const AddToCartButton({
-    Key? key,
-    required this.popularFood,
-  }) : super(key: key);
-
-  final PopularFood popularFood;
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,7 +18,7 @@ class AddToCartButton extends StatelessWidget {
       ),
       child: Center(
         child: Text(
-          'Add to cart ${popularFood.price}',
+          'Add to cart ',
           style: const TextStyle(
               color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
         ),

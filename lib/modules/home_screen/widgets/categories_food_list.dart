@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:projeto_chillox/application/constants/const.dart';
-import 'package:projeto_chillox/application/models/category.dart';
 
 ///
 /// This Widget draws a list of our categories food such as
@@ -37,11 +36,9 @@ class CategoriesFoodList extends StatelessWidget {
           height: 60,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: categoriesList.length,
+            itemCount: 2,
             itemBuilder: (context, index) {
-              return _CategoryCard(
-                categoriesList[index],
-              );
+              return _CategoryCard();
             },
           ),
         )
@@ -56,9 +53,6 @@ class CategoriesFoodList extends StatelessWidget {
 ///
 
 class _CategoryCard extends StatefulWidget {
-  Category category;
-  _CategoryCard(this.category);
-
   @override
   State<_CategoryCard> createState() => _CategoryCardState();
 }
@@ -83,12 +77,12 @@ class _CategoryCardState extends State<_CategoryCard> {
             child: Row(
               children: [
                 SvgPicture.asset(
-                  widget.category.iconPath,
+                  '',
                   height: 18,
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  widget.category.name,
+                  '',
                   style: const TextStyle(
                       fontWeight: FontWeight.w900, fontSize: 12),
                 )

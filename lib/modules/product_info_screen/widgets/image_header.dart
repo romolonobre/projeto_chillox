@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_chillox/application/models/popular_food.dart';
 
 class ImageHeaderPopularFood extends StatelessWidget {
-  const ImageHeaderPopularFood({
-    required this.popularFood,
-  });
-
-  final PopularFood popularFood;
-
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -23,7 +16,7 @@ class ImageHeaderPopularFood extends StatelessWidget {
           ],
         ),
         child: Image.asset(
-          popularFood.imageUrl,
+          'popularFood.imageUrl',
           height: 300,
           width: 250,
           fit: BoxFit.contain,

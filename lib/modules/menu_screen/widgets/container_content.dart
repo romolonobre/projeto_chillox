@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/application/components/delivery_info.dart';
-import 'package:projeto_chillox/application/models/burger.dart';
 
 ///
 /// This widget draws all selected burger information from HomeScreen
 ///
 
 class ConatinerContent extends StatelessWidget {
-  Burger burger;
-
-  ConatinerContent(this.burger);
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -21,7 +16,7 @@ class ConatinerContent extends StatelessWidget {
         ///
 
         Text(
-          burger.name,
+          'burger.name',
           style: const TextStyle(
             color: Colors.black,
             fontSize: 28,
@@ -40,28 +35,28 @@ class ConatinerContent extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             DeliveryInfo(
-                IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.moped_rounded,
-                    )),
-                'free'),
-            DeliveryInfo(
-                IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.moped_rounded,
-                    )),
-                burger.duration),
-            DeliveryInfo(
-                IconButton(
+              IconButton(
                   onPressed: () {},
                   icon: const Icon(
-                    Icons.star_rate_rounded,
-                    color: Colors.amber,
-                  ),
+                    Icons.moped_rounded,
+                  )),
+            ),
+            DeliveryInfo(
+              IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.moped_rounded,
+                  )),
+            ),
+            DeliveryInfo(
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.star_rate_rounded,
+                  color: Colors.amber,
                 ),
-                burger.review)
+              ),
+            )
           ],
         )
       ],

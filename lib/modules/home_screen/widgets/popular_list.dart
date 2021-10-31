@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/application/constants/const.dart';
-import 'package:projeto_chillox/application/models/burger.dart';
 
 import 'package:projeto_chillox/modules/menu_screen/menu_screen.dart';
 
@@ -17,11 +16,9 @@ class PopularList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
-        itemCount: bugersList.length,
+        itemCount: 2,
         itemBuilder: (context, index) {
-          return _PopularFoodCard(
-            burger: bugersList[index],
-          );
+          return _PopularFoodCard();
         },
       ),
     );
@@ -34,9 +31,6 @@ class PopularList extends StatelessWidget {
 ///
 
 class _PopularFoodCard extends StatelessWidget {
-  Burger burger;
-  _PopularFoodCard({required this.burger});
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -57,7 +51,7 @@ class _PopularFoodCard extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (_) {
-                    return MenuScreen(burger);
+                    return MenuScreen();
                   }),
                 );
                 //
@@ -69,8 +63,8 @@ class _PopularFoodCard extends StatelessWidget {
               /// Image value
               ///
 
-              child: Image.network(
-                burger.imageUrl,
+              child: Image.asset(
+                'assets/images/nachos.png',
                 fit: BoxFit.cover,
                 width: double.infinity,
               ),
@@ -110,7 +104,7 @@ class _PopularFoodCard extends StatelessWidget {
                     //
 
                     Text(
-                      burger.name,
+                      '',
                       style: TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.w800,
@@ -122,7 +116,7 @@ class _PopularFoodCard extends StatelessWidget {
                     //
 
                     Text(
-                      burger.category,
+                      '',
                       style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
@@ -143,7 +137,7 @@ class _PopularFoodCard extends StatelessWidget {
                           size: 15,
                           color: orageColor,
                         ),
-                        Text(burger.review,
+                        Text('burger.review',
                             style: TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.w500,
@@ -156,7 +150,7 @@ class _PopularFoodCard extends StatelessWidget {
                     //
 
                     Text(
-                      burger.duration,
+                      'burger.duration',
                       style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w500,
