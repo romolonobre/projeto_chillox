@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/components/buttom.dart';
 
+import 'buttom.dart';
+
 ///
 /// This Widget draws our customized button and
 /// use $navigator pop to go to the preview screen

@@ -2,8 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:projeto_chillox/modules/home_screen/home_screen.dart';
-
-import 'components/body.dart';
+import 'package:projeto_chillox/modules/splash_screen/widgets/body.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
