@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:projeto_chillox/modules/home_screen/home_screen.dart';
 import 'package:projeto_chillox/modules/splash_screen/widgets/body.dart';
 
@@ -19,11 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Timer(
-        const Duration(seconds: 5),
-        () => Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-              return const HomeScreen();
-            })));
+    Timer(const Duration(seconds: 5), () => Get.offAllNamed('/'));
 
     return const Scaffold(
       body: Body(),

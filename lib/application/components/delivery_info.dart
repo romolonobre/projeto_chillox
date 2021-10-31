@@ -7,9 +7,10 @@ import 'package:flutter/material.dart';
 
 class DeliveryInfo extends StatelessWidget {
   final IconButton icon;
-  final String info;
 
-  DeliveryInfo(this.icon, this.info);
+  DeliveryInfo(
+    this.icon,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -25,15 +26,6 @@ class DeliveryInfo extends StatelessWidget {
             onPressed: () {},
             icon: icon,
             iconSize: 14,
-          ),
-          Center(
-            child: Text(
-              info,
-              style: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w800,
-              ),
-            ),
           ),
         ],
       ),

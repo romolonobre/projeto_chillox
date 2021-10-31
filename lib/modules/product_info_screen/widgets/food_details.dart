@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_chillox/application/models/popular_food.dart';
 
 import 'package:projeto_chillox/typography/heading.dart';
 
@@ -8,13 +7,6 @@ import 'package:projeto_chillox/typography/heading.dart';
 ///
 
 class FoodDetails extends StatelessWidget {
-  const FoodDetails({
-    Key? key,
-    required this.popularFood,
-  }) : super(key: key);
-
-  final PopularFood popularFood;
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -24,11 +16,11 @@ class FoodDetails extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Heading(
-              popularFood.name,
+              'popularFood.name',
               fontWeight: FontWeight.w800,
             ),
             Text(
-              popularFood.price,
+              '   popularFood.price',
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -38,7 +30,7 @@ class FoodDetails extends StatelessWidget {
         ),
         const SizedBox(height: 5),
         Heading(
-          popularFood.subdescription,
+          ' popularFood.subdescription',
           heading: Headings.h5,
           color: Colors.grey,
         ),

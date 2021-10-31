@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_chillox/application/models/burger.dart';
 
 import 'grid_view_popular_food.dart';
 import 'menu_category.dart';
@@ -13,14 +12,11 @@ import 'stack_berger_details.dart';
 */
 
 class BodyMenu extends StatelessWidget {
-  Burger burger;
-  BodyMenu(this.burger);
-
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        StackBurgerDetails(burger: burger),
+        StackBurgerDetails(),
         const SizedBox(height: 100),
         const MenuSearchHeader(),
         const SizedBox(height: 15),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
-import 'package:projeto_chillox/application/models/popular_food.dart';
 
 import 'package:projeto_chillox/typography/heading.dart';
 
@@ -14,9 +13,6 @@ import 'food_quantity_counter.dart';
 import 'image_header.dart';
 
 class ProductBody extends StatelessWidget {
-  PopularFood popularFood;
-  ProductBody(this.popularFood);
-
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -42,7 +38,7 @@ class ProductBody extends StatelessWidget {
                     ///
                     ///image header
                     ///
-                    ImageHeaderPopularFood(popularFood: popularFood),
+                    ImageHeaderPopularFood(),
 
                     ///
                     /// App Bar Buttons
@@ -69,7 +65,7 @@ class ProductBody extends StatelessWidget {
                     /// This widget Draws the details about the food such as
                     /// NAME - PRICE - SHORT DESCRIPTION
                     ///
-                    FoodDetails(popularFood: popularFood),
+                    FoodDetails(),
 
                     const SizedBox(height: 15),
 
@@ -78,7 +74,7 @@ class ProductBody extends StatelessWidget {
                     /// a container. inside the container we used an $IconButtom
                     ///  with an icon, annonimous function and a text
 
-                    DeliveryInfoContent(popularFood: popularFood),
+                    DeliveryInfoContent(),
                     const SizedBox(height: 15),
                     Heading(
                       'Ingredients',
@@ -96,13 +92,13 @@ class ProductBody extends StatelessWidget {
                     /// abount the current food
                     ///
 
-                    DescriptionFood(popularFood: popularFood),
+                    DescriptionFood(),
                     const SizedBox(height: 10),
 
                     ///
                     /// Add To Cart Button
                     ///
-                    AddToCartButton(popularFood: popularFood)
+                    AddToCartButton()
                   ],
                 ),
               ),

@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:projeto_chillox/modules/home_screen/home_module.dart';
+import 'package:projeto_chillox/modules/home_screen/home_screen.dart';
+import 'package:projeto_chillox/modules/menu_screen/menu_module.dart';
+import 'package:projeto_chillox/modules/product_info_screen/product_info_module.dart';
 
 import 'modules/splash_screen/splash_scrren.dart';
 
@@ -11,14 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        home: SplashScreen()
-        // routes: {
-        // '/': (_) => SplashScreen(),
-        // 'HomeScreen': (_) => HomeScreen(),
-        //  'MenuScreen': (_) => MenuScreen(),
-        );
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      getPages: [
+        ...HomeModule().routers,
+        ...MenuModule().routers,
+        ...ProductInfoModule().routers
+      ],
+    );
   }
 }

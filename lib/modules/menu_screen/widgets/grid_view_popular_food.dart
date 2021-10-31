@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_chillox/application/models/popular_food.dart';
+import 'package:get/get.dart';
 
 import 'package:projeto_chillox/modules/product_info_screen/product_info_screen.dart';
 
@@ -14,13 +14,13 @@ class GridViewPopularFood extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: GridView.builder(
-        itemCount: popularfoodList.length,
+        itemCount: 2,
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
             mainAxisSpacing: 10,
             childAspectRatio: 0.8),
         itemBuilder: (context, index) {
-          return _PopularFoodCard(popularfoodList[index]);
+          return _PopularFoodCard();
         },
       ),
     );
@@ -28,16 +28,10 @@ class GridViewPopularFood extends StatelessWidget {
 }
 
 class _PopularFoodCard extends StatelessWidget {
-  PopularFood popularFood;
-  _PopularFoodCard(this.popularFood);
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.of(context).push(
-            MaterialPageRoute(builder: (_) => ProductInfoScreen(popularFood)));
-      },
+      onTap: () => Get.toNamed('/productInfo'),
       child: Container(
         margin: const EdgeInsets.symmetric(
           horizontal: 10,
@@ -66,7 +60,7 @@ class _PopularFoodCard extends StatelessWidget {
                 ],
               ),
               child: Image.asset(
-                popularFood.imageUrl,
+                'popularFood.imageUrl',
                 height: 130,
                 width: 130,
                 fit: BoxFit.contain,
@@ -77,7 +71,7 @@ class _PopularFoodCard extends StatelessWidget {
             /// Burger name value
             ///
             Text(
-              popularFood.name,
+              '   popularFood.name',
               style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -91,7 +85,7 @@ class _PopularFoodCard extends StatelessWidget {
             ///
 
             Text(
-              popularFood.subdescription,
+              ' popularFood.subdescription',
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 9,
@@ -122,7 +116,7 @@ class _PopularFoodCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
-                    popularFood.price,
+                    'popularFood.price',
                     style: const TextStyle(
                       fontWeight: FontWeight.w800,
                       fontSize: 16,
