@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:projeto_chillox/application/constants/const.dart';
 
 import 'package:projeto_chillox/modules/menu_screen/menu_screen.dart';
@@ -48,16 +49,7 @@ class _PopularFoodCard extends StatelessWidget {
             /// with $navigator.of(context).push
             ///
             child: InkWell(
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) {
-                    return MenuScreen();
-                  }),
-                );
-                //
-                //  Navigator.of(context)
-                //      .pushNamed('MenuScreen', arguments: populafood);
-              },
+              onTap: () => Get.toNamed('/menu'),
 
               ///
               /// Image value

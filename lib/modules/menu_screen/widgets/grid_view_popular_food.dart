@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:projeto_chillox/modules/product_info_screen/product_info_screen.dart';
 
@@ -30,10 +31,7 @@ class _PopularFoodCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (_) => ProductInfoScreen()));
-      },
+      onTap: () => Get.toNamed('/productInfo'),
       child: Container(
         margin: const EdgeInsets.symmetric(
           horizontal: 10,
