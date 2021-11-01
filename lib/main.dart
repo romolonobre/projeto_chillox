@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_chillox/models/burger.dart';
-import 'package:projeto_chillox/models/popular_food.dart';
-import 'package:projeto_chillox/screens/menu_screen/menu_screen.dart';
-import 'package:projeto_chillox/screens/product_info_screen/product_info_screen.dart';
-import 'package:projeto_chillox/screens/splash_screen/splash_scrren.dart';
+import 'package:get/route_manager.dart';
+import 'package:projeto_chillox/modules/home_screen/home_module.dart';
+import 'package:projeto_chillox/modules/home_screen/home_screen.dart';
+import 'package:projeto_chillox/modules/menu_screen/menu_module.dart';
+import 'package:projeto_chillox/modules/product_info_screen/product_info_module.dart';
+import 'package:projeto_chillox/modules/splash_screen/spalsh_module.dart';
 
-import 'screens/home_screen/home_screen.dart';
+import 'modules/splash_screen/splash_scrren.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,14 +17,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        home: SplashScreen()
-        // routes: {
-        // '/': (_) => SplashScreen(),
-        // 'HomeScreen': (_) => HomeScreen(),
-        //  'MenuScreen': (_) => MenuScreen(),
-        );
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      initialRoute: '/splash',
+      getPages: [
+        ...SpalshModule().routers,
+        ...HomeModule().routers,
+        ...MenuModule().routers,
+        ...ProductInfoModule().routers
+      ],
+    );
   }
 }
